@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const tldr = require('node-tldr')
-const summary = require('node-summary')
 const { Wit, log } = require('node-wit')
 
 /**
