@@ -1,0 +1,33 @@
+{
+  "name": "chief-wiggum",
+  "version": "1.0.0",
+  "description": "A chatbot interface to check Google AdWords Display Placement Urls for potentially harmful placements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [
+    "adwords",
+    "chatbot",
+    "display",
+    "placements"
+  ],
+  "author": "Jonathan Faircloth",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "node-summary": "git+https://github.com/jbrooksuk/node-summary.git",
+    "node-tldr": "^0.4.14",
+    "node-wit": "^4.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "rimraf": "^2.6.2"
+  }
+}
